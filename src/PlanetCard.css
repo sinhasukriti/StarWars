@@ -1,0 +1,67 @@
+.planet-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  max-width: 600px;
+}
+
+.planet-name {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.planet-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.planet-info {
+  flex: 1;
+}
+
+.residents-table {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.residents-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.residents-table th,
+.residents-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.residents-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.residents-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.planet-card {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.residents-table table {
+  animation: fadeIn 0.5s ease-out;
+}

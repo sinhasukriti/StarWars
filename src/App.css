@@ -1,38 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+  
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://wallpaperset.com/w/full/1/c/4/177607.jpg');
+  background-size: cover; /* Cover the entire background */
+  background-position: center; 
+  background-color: #bfdde6; /* Set a calming background color */
+  margin: 0;
+  
+  font-family: 'PT Serif", serif '; 
+  
+  font-style: normal;
+  font-weight: bold;
+
+}
+
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #496675; /* Dark gray color for heading text */
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.planet-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url('https://e0.pxfuel.com/wallpapers/332/971/desktop-wallpaper-the-mandalorian-season-2-poster-in-2020-star-wars-star-wars-poster-star-wars-background.jpg');
+  background-size: cover; /* Cover the entire background */
+  background-position: center; 
+  background-color: #ffffff; /* White background color */
+  border-radius: 20px;
+  box-shadow: 1 1 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 80%; /* Adjusted width for better responsiveness */
+  max-width: 700px; /* Maximum width for larger screens */
 }
 
-.App-link {
-  color: #61dafb;
+.planet-container:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.planet-container h2 {
+  color: #08495a; /* Orange color for planet names */
+  margin-bottom: 20px;
+ 
+}
+
+.planet-container p {
+  color: #312e2e; /* Dark gray color for text */
+  margin-bottom: 15px;
+}
+
+
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%; /* Ensure buttons span the full width */
+}
+
+button {
+  background-color: #49aae1;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #888; /* Dark gray color for disabled button */
+  cursor: not-allowed;
+}
+
+button:hover {
+  background-color: #09c5e6;
+}
+
+.prev-button {
+  margin-right: 10px; /* Add margin between previous and next buttons */
 }
